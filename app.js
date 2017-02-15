@@ -15,7 +15,7 @@ mongoose.connect('localhost:27017/node-angular');   //connecting mongoose to our
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));        //tel app where are our views
-app.set('view engine', 'hbs');                          //view engine (setting) // to dynamically inject content into template
+app.set('view engine', 'hbs');                         //view engine (setting) // to dynamically inject content into template
                                                                        
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
