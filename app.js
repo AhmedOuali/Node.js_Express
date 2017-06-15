@@ -9,6 +9,8 @@ var mongoose =require('mongoose');
 
 
 var appRoutes = require('./routes/app');
+var contactRoutes = require('./routes/messages');
+var userRoutes = require('./routes/user');
 
 var app = express();                                //creating express app (famework)
 mongoose.connect('localhost:27017/node-angular');   //connecting mongoose to our database
@@ -32,7 +34,9 @@ app.use(function (req, res, next) {
     next();
 });
 
-app.use('/', appRoutes); // eny request comes to / will be forwarded to app.js
+app.use('/contact', contactRoutes); // any request comes to / will be forwarded to app.js
+app.use('/user', userRoutes); // any request comes to / will be forwarded to app.js
+app.use('/', appRoutes);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {           //if app.js can't handle the request or passed to next() methode , it will be returned to 
