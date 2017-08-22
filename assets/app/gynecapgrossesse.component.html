@@ -1,0 +1,211 @@
+ <main class="site-content" role="main">
+<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					<h1 class="navbar-brand">
+						<a href="#body"><img src="//gynecap-project-v3-xcapo32.c9users.io//img/gynecap sigle.svg"  height="65"></a>
+					</h1>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a href="#contact" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contactez-Nous </a>
+                       </li>
+                        <li><a href="#social" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Suivez-nous</a>
+                     </li>
+                      
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+        
+        
+        
+        
+    <div class="card card-2">
+      <br/>
+      <div class="container">
+        <img class="img-responsive" alt="" src="/../../img/3D Boite Grossesse.jpg" />
+      </div>
+      <br>
+      <br>
+      <div class=".col-xs-12 .col-sm-6 .offset-sm-3">
+        <font color="#29364A"> <strong><h2>Pourquoi Gynecap Grossesse ?</h2></strong></font>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-md-offset-0 col-xs-12 col-xs-offset-0 nopadding">
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe id="ytiframe" class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/U55mBByjix" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-5 col-xs-12">
+            <br/>
+            <section class="jk-slider">
+              <div id="gg" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#gg" data-slide-to="0" class="active"></li>
+                  <li data-target="#gg" data-slide-to="1"></li>
+                  <li data-target="#gg" data-slide-to="2"></li>
+                  <li data-target="#gg" data-slide-to="3"></li>
+            
+                </ol>
+                <div class="carousel-inner">
+               
+                  <div class="item active">
+                    <div class="hero">
+                    </div>
+                    <div class="overlay"></div>
+                    <a href="#"><img src="/../../img/res/ADV_Final_6.jpg" /></a>
+                  </div>
+                  <div class="item">
+                    <div class="hero">
+                    </div>
+                    <div class="overlay"></div>
+                    <a href="#"><img src="/../../img/res/ADV_Final_7.jpg" /></a>
+                  </div>
+                  <div class="item">
+                    <div class="hero">
+                    </div>
+                    <div class="overlay"></div>
+                    <a href="#"><img src="/../../img/res/ADV_Final_8.jpg" /></a>
+                  </div>
+                  <div class="item">
+                    <div class="hero">
+                    </div>
+                    <div class="overlay"></div>
+                    <a href="#"><img src="/../../img/res/ADV_Final_9.jpg" /></a>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#gg" data-slide="prev">
+                <span class="fa fa-arrow-left"></span>
+              </a>
+                <a class="right carousel-control" href="#gg" data-slide="next">
+                <span class="fa fa-arrow-right"></span>
+              </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    	<section id="contact" >
+				<div class="container">
+					<div class="row">
+						
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2>Contact</h2>
+							<p>Laisser votre avis</p>
+						</div>
+						
+						
+						<div class="col-md-7 contact-form wow animated fadeInLeft">
+							<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+								<div class="input-field">
+									<input 
+										type="text" 
+										name="name" 
+										id="name"
+										class="form-control"
+										[ngModel]="name"
+										placeholder="Nom..."
+						                required>
+								</div>
+								<div class="input-field">
+									<input 
+										type="email" 
+										name="email"
+										[ngModel]="email"
+										id="email"
+										class="form-control" 
+										placeholder="Email..."
+										required>
+								</div>
+								<div class="input-field">
+									<input 
+										type="text" 
+										name="subject"
+										[ngModel]="subject"
+										id="subject"
+										class="form-control" 
+										placeholder="Sujet...">
+								</div>
+								<div class="input-field">
+									<textarea 
+										name="content"
+										id="content"
+										[ngModel]="content"
+										class="form-control" 
+										placeholder="Message...">
+									</textarea>
+								</div>
+						       	<button type="submit" id="submit" class="btn btn-blue btn-effect">Envoyer</button>
+							</form>
+						</div>
+						
+						<div class="col-md-5 wow animated fadeInRight">
+							<address class="contact-details">
+								<h3>Contactez nous</h3>						
+								<p><i class="fa fa-pencil"></i>France<span>31 Rue Raffet75016 PARIS</span></p><br>
+								<p><i class="fa fa-phone"></i>Tel: 0033786505324-0033973106739</p>
+								<p><i class="fa fa-envelope"></i>gynecap.pharma@gmail.com</p>
+							</address>
+						</div>
+			
+					</div>
+				</div>
+			</section>
+			</main>
+			<!-- Social section -->
+			<section id="social" class="parallax">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+						
+							<div class="sec-title text-center white wow animated fadeInDown">
+								<h2>Suivez-nous</h2>
+								<p>Sur les reseaux sociaux suivantes :</p>
+							</div>
+							
+							<ul class="social-button">
+								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="https://icons8.com"><i class="fa fa-twitter fa-2x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-google fa-2x"></i></a></li>							
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end Social section -->

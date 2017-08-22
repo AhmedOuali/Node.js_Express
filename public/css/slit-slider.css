@@ -61,8 +61,8 @@
 }
 
 #nav-arrows > a {
-  border: 2px solid  #de7e7e ;
-  color:  #ca4949;
+  border: 2px solid  #4DD9BF ;
+  color:  #4DD9BF;
   display: block;
   height: 60px;
   line-height: 76px;
@@ -89,13 +89,13 @@
 }
 
 #nav-arrows > a.sl-next:hover {
-	background-color: #ca4949;
-	border-color: #de7e7e;
+	background-color: #4DD9BF;
+	border-color: #4DD9BF;
 	color: #fff;
 }
 #nav-arrows > a.sl-prev:hover {
-	background-color: #ca4949;
-	border-color: #de7e7e;
+	background-color: #4DD9BF;
+	border-color: #4DD9BF;
 	color: #fff;
 }
 /* Custom navigation dots */

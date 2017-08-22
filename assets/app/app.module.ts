@@ -16,6 +16,9 @@ import { FooterComponent } from "./footer.component";
 import { ErrorService } from "./errors/error.service";
 import { ErrorComponent } from "./errors/error.component";
 import { HeaderComponent } from "./header.component";
+import {GynecapAllaittementComponent } from "./gynecapallaittement.component";
+import {GynecapGrossesseComponent } from "./gynecapgrossesse.component";
+import {GynecapConceptionComponent } from "./gynecapconception.component";
 import { HomeComponent } from "./home/home.component";
 import { HttpModule } from "@angular/http";
 import 'hammerjs';
@@ -36,7 +39,10 @@ import 'hammerjs';
         ErrorComponent,
         TemoignagesComponent,
         FooterComponent,
-        HomeComponent
+        HomeComponent,
+        GynecapAllaittementComponent,
+        GynecapGrossesseComponent,
+        GynecapConceptionComponent
     ],
     providers: [ErrorService],
     imports: [

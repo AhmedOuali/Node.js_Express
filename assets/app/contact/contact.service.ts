@@ -13,7 +13,7 @@ export class ContactService{
     addMessage(message: Message){
         const body = JSON.stringify(message); //convert javascript object to JSON String
         const headers= new Headers({'content-type': 'application/json'}); // setting up the content-type because it text/plain as default value                                   //if localStorage.getItem(token) == null
-        return this.http.post('https://gynecap-project-xcapo32.c9users.io/contact',body, {headers: headers}) // Prepere the soq of observable object
+        return this.http.post('https://gynecap-project-v3-xcapo32.c9users.io/contact',body, {headers: headers}) // Prepere the soq of observable object
             .map((response: Response) => {
                 const result = response.json();
                 this.errorService.handleError({title: response.json().title, text: response.json().message, type: 'success'})//creating an alert error;

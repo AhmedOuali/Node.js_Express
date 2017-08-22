@@ -7,7 +7,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose =require('mongoose');
 
-
+var conceptionRoutes = require('./routes/gynC');
+var grossesseRoutes = require('./routes/gynG');
+var allaittementRoutes = require('./routes/gynA');
 var appRoutes = require('./routes/app');
 var contactRoutes = require('./routes/messages');
 var userRoutes = require('./routes/user');
@@ -33,9 +35,11 @@ app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Methods', 'POST, GET, PATCH, DELETE, OPTIONS');
     next();
 });
-
 app.use('/contact', contactRoutes); // any request comes to / will be forwarded to app.js
 app.use('/user', userRoutes); // any request comes to / will be forwarded to app.js
+app.use('/grossesse', grossesseRoutes);
+app.use('/allaittement', allaittementRoutes);
+app.use('/conception', conceptionRoutes);
 app.use('/', appRoutes);
 
 // catch 404 and forward to error handler
