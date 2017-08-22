@@ -4,13 +4,13 @@ var User = require('../models/user');
 
 
 
-router.get('/grossesse', function (req, res, next) {
+router.get('/produit/gynecap-grossesse', function (req, res, next) {
     res.render('gynecapgrossesse');
 });
-router.get('/allaittement', function (req, res, next) {
+router.get('/produit/gynecap-conception', function (req, res, next) {
     res.render('gynecapallaitement'); 
 });
-router.get('/conception', function (req, res, next) {
+router.get('/produit/gynecap-conception', function (req, res, next) {
     res.render('gynecapconception');
 });
 

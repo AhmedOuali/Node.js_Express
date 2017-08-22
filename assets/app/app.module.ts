@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AppComponent } from "./app.component";
+import {routing} from "./app.routing";
 // import { MessageComponent } from "./messages/message.component";
 // import { MessageListComponent } from "./messages/message-list.component";
 // import { MessageInputComponent } from "./messages/message-input.component";
@@ -16,10 +17,11 @@ import { FooterComponent } from "./footer.component";
 import { ErrorService } from "./errors/error.service";
 import { ErrorComponent } from "./errors/error.component";
 import { HeaderComponent } from "./header.component";
-import {GynecapAllaittementComponent } from "./gynecapallaittement.component";
-import {GynecapGrossesseComponent } from "./gynecapgrossesse.component";
-import {GynecapConceptionComponent } from "./gynecapconception.component";
-import { HomeComponent } from "./home/home.component";
+import { GynecapGrossesseComponent } from "./gynecapgrossesse.component";
+import { GynecapConceptionComponent } from "./gynecapconception.component";
+import { GynecapAllaittementComponent } from "./gynecapallaittement.component";
+import { AccueilComponent } from "./accueil.component"; 
+import { HomeComponent } from "./home/home.component"; 
 import { HttpModule } from "@angular/http";
 import 'hammerjs';
 
@@ -41,8 +43,10 @@ import 'hammerjs';
         FooterComponent,
         HomeComponent,
         GynecapAllaittementComponent,
+        GynecapConceptionComponent,
         GynecapGrossesseComponent,
-        GynecapConceptionComponent
+        AccueilComponent
+        
     ],
     providers: [ErrorService],
     imports: [
@@ -50,6 +54,7 @@ import 'hammerjs';
         FormsModule,
         ReactiveFormsModule,
         HttpModule,
+        routing
     ],
     bootstrap: [AppComponent]
 })
